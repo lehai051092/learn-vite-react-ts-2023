@@ -1,4 +1,4 @@
-# Learn React
+# Learn Vite + React + Ts 2023
 
 File Name Convention
 
