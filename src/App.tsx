@@ -9,10 +9,14 @@ function App() {
     isHero: true,
   };
 
+  function handleClick(student: Student) {
+    console.log(student);
+  }
+
   return (
     <div>
       <Header></Header>
-      <StudentFeature student={student}></StudentFeature>
+      <StudentFeature student={student} onClick={handleClick}></StudentFeature>
       <Footer></Footer>
     </div>
   );
