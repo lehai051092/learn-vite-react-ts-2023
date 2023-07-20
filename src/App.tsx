@@ -1,4 +1,4 @@
-import { Footer, Header } from './components/common';
+import { MainLayout } from './components/layout';
 import { StudentFeature } from './features/labs/StudentFeature';
 import { Student } from './models';
 
@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      <StudentFeature student={student} onClick={handleClick}></StudentFeature>
-      <Footer></Footer>
+      <MainLayout>
+        <StudentFeature student={student} onClick={handleClick} />
+      </MainLayout>
     </div>
   );
 }
